@@ -25,7 +25,7 @@ function Banner() {
   }
   return ( <header className='banner' style={{
     backgroundSize: "cover",
-    backgroundImage:`url("https://cdn.discordapp.com/attachments/1058878537899180184/1065530051585638470/e1hLQ2m.png")`,
+    backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
     backgroundPosition: "center center",
     
     }}>

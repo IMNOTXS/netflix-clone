@@ -10,6 +10,15 @@ function LoginScreen() {
         <button className='loginScreen_button'>
           Sign in
         </button>
+
+        <div className="loginScreen_gradient">
+
+        </div>
+        <div className="loginScreen_body">
+          <>
+          <h1>Unlimited films, TV programmes and more.</h1>
+          </>
+        </div>
       </div>
     </div>
   )

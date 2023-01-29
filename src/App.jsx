@@ -7,6 +7,7 @@ import {
   BrowserRouter as Router,
   Switch,
 } from "react-router-dom";
+import LoginScreen from './screens/LoginScreen';
 
 
 function App() {
@@ -15,11 +16,16 @@ function App() {
     <div className="App">
       <Nav /> 
       <Router>
-        <Switch>
+        {!user ? (
+          <LoginScreen />
+
+        ): (
+          <Switch>
           <Route path="/">
             <HomeScreen />
           </Route>
         </Switch>
+        )}
       </Router>
     </div>
   );
